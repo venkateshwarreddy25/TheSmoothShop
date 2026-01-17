@@ -37,7 +37,7 @@ import TvView from './ViewData/TvView'
 
 export default function App() {
   return (
-    <BrowserRouter basename={import.meta.env.BASE_URL}>
+    <BrowserRouter>
       {/* <NavBar /> */}
       <Routes>
         <Route path="/" element={<LandingPage />} />
