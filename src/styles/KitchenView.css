@@ -1,0 +1,98 @@
+.kitchen-page {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f5f7;
+  padding: 20px 40px;
+  min-height: 100vh;
+}
+
+.kitchen-container {
+  display: flex;
+  gap: 40px;
+  max-width: 900px;
+  margin: 30px auto;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kitchen-container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
+}
+
+.kitchen-image img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.kitchen-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.kitchen-model {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.kitchen-price {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #1976d2;
+}
+
+.kitchen-category,
+.kitchen-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.add-to-cart {
+  margin-top: 15px;
+  padding: 12px 25px;
+  background-color: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #115293;
+  transform: translateY(-2px);
+}
+
+@media screen and (max-width: 900px) {
+  .kitchen-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .kitchen-image img {
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .kitchen-page {
+    padding: 15px;
+  }
+
+  .add-to-cart {
+    width: 100%;
+  }
+}

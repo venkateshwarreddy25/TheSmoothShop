@@ -1,0 +1,118 @@
+.ac-page-wrapper {
+  padding: 20px 40px;
+  background-color: #f9f9f9;
+}
+
+.ac-heading {
+  font-size: 28px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 20px;
+  padding-left: 12px;
+  border-left: 4px solid #000;
+}
+
+.ac-page-content {
+  display: flex;
+  gap: 30px;
+}
+
+.ac-filter {
+  min-width: 180px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.ac-filter h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #1976d2;
+}
+
+.ac-checkbox {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.ac-checkbox input {
+  margin-right: 8px;
+}
+
+.ac-products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.ac-card {
+  background-color: #ffffff;
+  width: 220px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ac-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.ac-image-link {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.ac-image {
+  max-width: 100%;
+  max-height: 160px;
+  object-fit: contain;
+}
+
+.ac-model {
+  font-weight: 600;
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.ac-company {
+  color: #1976d2;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.ac-description {
+  font-size: 13px;
+  color: #666;
+}
+
+@media screen and (max-width: 900px) {
+  .ac-page-content {
+    flex-direction: column;
+  }
+  .ac-filter {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .ac-products {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .ac-card {
+    width: 90%;
+  }
+}

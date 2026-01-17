@@ -1,0 +1,137 @@
+.fridge-wrapper {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+}
+
+.fridge-heading {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #222;
+  text-align: center;
+}
+
+.fridge-description {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.4;
+  margin: 0 12px 12px;
+
+
+}
+
+.fridge-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto; 
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+}
+
+.fridge-container::-webkit-scrollbar {
+  display: none;
+}
+
+.fridge-description {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.4;
+  margin: 4px 10px 8px;
+}
+
+.fridge-card {
+  flex: 0 0 auto; 
+  width: 200px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.fridge-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.fridge-image {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+.fridge-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.fridge-content {
+  padding: 10px 15px;
+}
+
+.fridge-model {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #111;
+}
+
+.fridge-footer {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.fridge-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #1e88e5;
+}
+
+@media (max-width: 768px) {
+  .fridge-container {
+    gap: 15px;
+  }
+
+  .fridge-card {
+    width: 160px;
+  }
+
+  .fridge-image {
+    height: 120px;
+  }
+
+  .fridge-model {
+    font-size: 14px;
+  }
+
+  .fridge-price {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fridge-wrapper {
+    padding: 15px;
+  }
+
+  .fridge-card {
+    width: 130px;
+  }
+
+  .fridge-image {
+    height: 100px;
+  }
+
+  .fridge-model {
+    font-size: 12px;
+  }
+
+  .fridge-price {
+    font-size: 12px;
+  }
+}

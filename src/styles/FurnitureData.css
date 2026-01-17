@@ -1,0 +1,23 @@
+.hover-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.2) !important;
+}
+
+.hover-card .btn-primary {
+  transition: all 0.3s ease;
+}
+
+.hover-card:hover .btn-primary {
+  background-color: #0056b3;
+  transform: scale(1.02);
+}
+
+.badge {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px rgba(220, 53, 69, 0.3);
+}

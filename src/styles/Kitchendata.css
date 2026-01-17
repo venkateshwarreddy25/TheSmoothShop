@@ -1,0 +1,30 @@
+.hover-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.2) !important;
+}
+
+.hover-card:hover .badge {
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.hover-card .btn {
+  transition: all 0.3s ease;
+}
+
+.hover-card:hover .btn {
+  background-color: #0056b3;
+  transform: scale(1.02);
+}

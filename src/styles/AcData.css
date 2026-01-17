@@ -1,0 +1,30 @@
+.ac-card {
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+}
+
+.ac-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.ac-image {
+  height: 160px;
+  padding: 12px;
+  object-fit: contain;
+}
+
+.ac-desc {
+  font-size: 13px;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (min-width: 992px) {
+  .ac-row {
+    flex-wrap: nowrap;
+  }
+}

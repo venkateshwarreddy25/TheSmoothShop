@@ -1,0 +1,118 @@
+.fridge-page-wrapper {
+  padding: 20px 40px;
+  background-color: #f9f9f9;
+}
+
+.fridge-heading {
+  font-size: 28px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 20px;
+  padding-left: 12px;
+  border-left: 4px solid #000;
+}
+
+.fridge-page-content {
+  display: flex;
+  gap: 30px;
+}
+
+.fridge-filter {
+  min-width: 180px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.fridge-filter h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #1976d2;
+}
+
+.fridge-checkbox {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.fridge-checkbox input {
+  margin-right: 8px;
+}
+
+.fridge-products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.fridge-card {
+  background-color: #ffffff;
+  width: 220px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fridge-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.fridge-image-link {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.fridge-image {
+  max-width: 100%;
+  max-height: 160px;
+  object-fit: contain;
+}
+
+.fridge-description {
+  font-weight: 600;
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.fridge-brand {
+  color: #1976d2;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.fridge-price {
+  font-size: 13px;
+  color: #666;
+}
+
+@media screen and (max-width: 900px) {
+  .fridge-page-content {
+    flex-direction: column;
+  }
+  .fridge-filter {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .fridge-products {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .fridge-card {
+    width: 90%;
+  }
+}
