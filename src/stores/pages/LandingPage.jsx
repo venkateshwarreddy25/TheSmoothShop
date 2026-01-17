@@ -1,6 +1,6 @@
 import NavBar from "../components/NavBar";
 import Products from "../components/Products";
-import "./LandingPage.css";
+import "./Landingpage.css";
 
 const LandingPage = () => {
   return (
